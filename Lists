@@ -1,0 +1,19 @@
+if __name__ == '__main__':
+    N = int(input())
+    tlist = []
+    for i in range(N):
+        onelinee= input().split()
+        if onelinee[0] == 'insert':
+            tlist.insert(int(onelinee[1]), int(onelinee[2]))
+        elif onelinee[0] == 'print':
+            print(tlist)
+        elif onelinee[0] =='remove':
+            tlist.remove(int(onelinee[1]))
+        elif onelinee[0] == 'append':
+            tlist.append(int(onelinee[1]))
+        elif onelinee[0] == 'sort':
+            tlist.sort()
+        elif onelinee[0] == 'pop':
+            tlist.pop()
+        elif onelinee[0] == 'reverse':
+            tlist.reverse()
