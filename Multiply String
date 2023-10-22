@@ -1,0 +1,8 @@
+class Solution:
+    def multiply(self, num1: str, num2: str) -> str:
+        integer1 = int(num1)
+        integer2 = int(num2)
+
+        product = integer1 * integer2
+        Sproduct = str(product) 
+        return Sproduct
