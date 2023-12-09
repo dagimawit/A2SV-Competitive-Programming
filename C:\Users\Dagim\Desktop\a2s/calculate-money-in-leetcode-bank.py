@@ -1,5 +1,5 @@
-class Solution(object):
-    def totalMoney(self, n):
+class Solution:
+    def totalMoney(self, n: int) -> int:
         money = 0 
         m = 1 + (n//7)
 
@@ -7,9 +7,9 @@ class Solution(object):
             for _ in range(7):
                 money += i
                 i +=1
+        
         for _ in range(n%7):
             money +=m
             m+=1
         return money
-      
         
